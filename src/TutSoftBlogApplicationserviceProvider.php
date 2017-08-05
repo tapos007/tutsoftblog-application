@@ -17,6 +17,7 @@ class TutSoftBlogApplicationserviceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__.'/route/routes.php');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations/');
+        $this->loadViewsFrom(__DIR__.'/views/posts', 'posts');
     }
 
     /**
